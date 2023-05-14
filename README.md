@@ -185,4 +185,79 @@ b  = \begin{pmatrix} i & 0 \\ 0 & -i\end{pmatrix}\quad ab = \begin{pmatrix} 0 & 
 
 * Let $\phi:G\to H$ be a ***homomorphism*** with ***kernel*** $K$. Then $G/K\cong\text{im}(\phi)$. More precisely, there is an ***isomorphism*** $\overline{\phi}: G/K\to\text{im}(\phi)$ defined by $\overline{\phi}(gK) = \phi(g)$ for all $g\in G$.
 
+#### Second Isomorphism Theorem
 
+Let $G$ be a group. Let $H$ be any subgroup and let $K$ be a normal subgroup of a group $G$. Then the following conditions hold:
+
+* $HK = KH$ is a ***subgroup*** of $G$,
+* $H\cap K$ is a ***normal subgroup*** of $H$, and 
+* $H/(H\cap K)\cong HK/K$.
+
+#### Third Isomorphism Theorem
+
+Let $K\subseteq H\subseteq G$, where $K$ and $H$ are both ***normal subgroups*** of $G$. Then:
+
+* $K$ is a ***normal subgroup*** of $H$.
+* $H/K$ is a ***normal subgroup*** of $G/K$.
+* $(G/K)/(H/K)\cong G/H$.
+
+### Group Actions
+
+Let $G$ be a group and $X$ a set. An ***action*** of $G$ on $X$ is a map $\cdot$: $G\times X\to X$, which satisfies the properties:
+
+* $1_{G}\cdot x = x$ for all $x\in X$.
+* $(gh)\cdot x = g\cdot(h\cdot x)$ for all $g,h\in G, x\in X$.
+
+This is also defined as a ***left action***, while a ***right action*** can be defined as a map $X\times G\to X$ satisfying analogous properties.
+
+#### Kernel of an action
+
+* The ***kernel*** of an action $\cdot$ of $G$ on $X$ is defined to be the kernel $K = \ker(\phi)$ of the ***homomorphism*** $\phi:G\to\text{Sym}(X)$. So $$K = \set{g\in G\vert g\cdot x = x,\forall x\in X}.$$
+* The action is said to be ***faithful*** if $K = \set{1}.$
+
+#### Cayley's Theorem
+
+* Every group $G$ is ***isomorphic*** to a ***permutation group***. 
+
+### Orbits and Stabilisers
+
+#### Orbits
+
+* Let $\cdot$ be an action of $G$ act on $X$. We define a relation $\sim$ on $X$ by $x\sim y$ if and only if there exists a $g\in G$ with $y = g\cdot x$. The equivalence classes of $\sim$ are called the ***orbits*** of $G$ on $X$. In particular, the orbit of a specific element $x\in X$, which is denoted by $G\cdot x$ or by $\text{Orb}_ {G}(x)$ is $$G\cdot x = \text{Orb}_ {G}(x) = \set{y\in X:\text{there exists} g\in G\text{with}g\cdot x = y} = \set{g\cdot x:g\in G}.$$
+* An action of $G$ on $X$ is ***transitive*** if it has only a single orbit. Equivalently, an action is ***transitive*** if for every $x,y\in X$, there is some $g\in G$ such that $g\cdot x = y$.
+
+#### Stabiliser
+
+* Let $G$ act on $X$ and let $x\in X$. Then the ***stabiliser*** of $x$ in $G$, denoted by $G_{x}$ or $\text{Stab}_ {G}(x)$, is $$\set{g\in G:g\cdot x = x}.$$ That is, the subset of $G$ comprising all elements that leave $x$ fixed.
+* The stabiliser is not just a subset of $G$, but actually a ***subgroup***.
+* Let $G$ act on $X$ and $x\in X$. Then $\text{Stab}_ {G}(x)$ is a subgroup of $G$ and $\cap_{x\in X}\text{Stab}_ {G}(x)$ is the ***kernel*** of the action of $G$ on $X$.
+
+#### The Orbit-Stabiliser Theorem
+
+* Let a finite group $G$ act on $X$, and let $x\in X$. Then $|G| = |\text{Orb}_ {G}(x)|\times |\text{Stab}_ {G}(x)|.$
+
+### Conjugation Action and Conjugacy Classes
+
+* Another important action of $G$ on $X = G$, which is defined by $$g\cdot x = gxg^{-1}$$for $g,x\in G$. This action is called ***conjugation***.
+* The orbits of the action are called the ***conjugacy classes*** of $G$, and elements in the same conjugacy class are said to be ***conjugate*** in $G$.
+* So $g,h\in G$ are conjugate if and only if there exists $f\in G$ with $h = fgf^{-1}$. We will write $\text{Cl}_ {G}(g)$ for the orbit of $g$, that is the conjugacy class containing $g$. Thus, $$\text{Cl}_ {G}(g) = \set{xgx^{-1}\vert x\in G}.$$
+
+#### Centraliser
+
+* The ***centraliser*** of $g$ in $G$ is written as $C_{G}(g)$, that is, $$C_{G}(g) = \set{x\in G\vert gx = xg}.$$
+* Let $G$ be a finite group and let $g\in G$. Then $|\text{Cl}_ {G}(g)| = |G|/|C_{G}(g)|.$
+
+#### Centre
+* The kernel $K$ of the action consists of those $f\in G$ that fix and hence commute with all $g\in G$. This is called the ***centre*** of $G$ and is denoted by $Z(G)$. So we have $$Z(G) = \set{f\in G:fg = gf\quad\forall g\in G}.$$
+* Note that $g\in Z(G)$ if and only if $\text{Cl}_ {G}(g) = \set{g}.$
+
+### Conjugacy Classes in Alternating Groups
+
+* Let $G = S_{n}$ and $H = A_{n}$. Let $h\in H$, then $\text{Cl}_ {H}(h) = \text{Cl}_ {G}(h)$ or $|\text{Cl}_ {H}(h)| = \frac{1}{2}|\text{Cl}_ {G}(h)|.$
+
+### Simple Groups
+
+* A group $G$ with $|G| > 1$ is called ***simple*** if its only normal subgroups are $G$ and $\set{1}$.
+* A ***simple abelian group*** is ***cyclic*** of ***prime order***.
+* A subgroup $H$ of a group $G$ is ***normal*** in $G$ if and only if $H$ consists of a union of ***conjugacy classes*** of $G$.
+* The group $A_{5}$ is ***simple***.
