@@ -261,3 +261,27 @@ This is also defined as a ***left action***, while a ***right action*** can be d
 * A ***simple abelian group*** is ***cyclic*** of ***prime order***.
 * A subgroup $H$ of a group $G$ is ***normal*** in $G$ if and only if $H$ consists of a union of ***conjugacy classes*** of $G$.
 * The group $A_{5}$ is ***simple***.
+
+### Sylow's subgroup
+
+* Let $G$ be a finite group of order $p^{n}\cdot m$, where $n$ is the largest power of the prime $p$ that divides $|G|$, so $m$ is not divisible by $p$. A subgroup of $G$ of order $p^{n}$ is called a ***Sylow p-subgroup*** of $G$.
+
+#### Sylow's Theorem
+
+Let $G$ be a finite group, $p$ is prime, and $|G| = p^{n}m$, where $p \not\vert m$. Then 
+
+* $G$ has a Sylow p-subgroup, and any subgroup of $G$ of order $p^{a}$ for $1\leq a\leq n$ is ***contained*** in a Sylow p-subgroup of $G$.
+* Any ***two*** Sylow p-subgroups of $G$ are ***conjugate*** in $G$.
+* The number $r$ of Sylow p-subgroups of $G$ satisfies $r\equiv 1(\mod p)$ and $r\vert m$.
+
+#### Sylow's Theorem 2
+
+* Sylow's second theorem says any two Sylow p-subgroups of $G$ are ***conjugate*** in $G$, and here conjugate means there is a homomorphism $\phi:G\to\text{Sym}(X)$ and $\text{Sym}(X)\cong S_{|X|}$.
+
+#### Applications of Sylow's Theorem
+
+* Let $G$ be a group of order $p^{n}m$ with $n\geq 1$ and $p \not\vert m$. Let $$\text{Syl}_ {p}(G) = \set{H\leq G\vert|H| = p^{n}}$$ be the set of Sylow p-subgroups of $G$.
+* If $P\in\text{Syl}_ {p}(G)$ and $g\in G$, then $gPg^{-1}\in\text{Syl}_ {p}(G)$.
+* $|\text{Syl}_ {p}(G)|$ divides $m = |G|/|P|$.
+* If there is only one Sylow p-subgroup of $G$, then it is ***a normal subgroup*** of $G$.
+* There are ***no simple groups*** of order 24.
