@@ -285,3 +285,94 @@ Let $G$ be a finite group, $p$ is prime, and $|G| = p^{n}m$, where $p \not\vert 
 * $|\text{Syl}_ {p}(G)|$ divides $m = |G|/|P|$.
 * If there is only one Sylow p-subgroup of $G$, then it is ***a normal subgroup*** of $G$.
 * There are ***no simple groups*** of order 24.
+
+### Rings and Subrings
+
+#### Definition of a ring
+
+A ***ring*** is a set $R$ together with two binary operations $+,\cdot:R\times R\to R$ that satisfy the following properties:
+
+* $(R,+)$ is an ***abelian group***.
+* $(ab)c = a(bc)$ for all $a,b,c\in R$.
+* $(a+b)c = ac+bc$ and $a(b+c) = ab+ac$ for all $a,b,c\in R$.
+* There exists an element $1 = 1_{R}\in R$ such that $1a = a1 = a$ for all $a\in R$.
+
+#### Commutative ring
+
+* A ring $R$ is ***commutative*** if it satisfies $$ab = ba$$for all $a,b\in R$.
+* $\mathbb{Z},\mathbb{Q},\mathbb{R} and \mathbb{C}$ are all ***commutative rings*** with their usual addition and multiplication.
+* $\mathbb{Z}_ {n}$ is a ***commutative ring*** under addition and multiplication modulo $n$, for every positive integer $n$.
+
+#### Definition of subrings
+
+* A subset $S$ of a ring $R$ is called a ***subring*** of $R$ if it forms a ring under the same operations as $R$ with the same ***identity element***.
+
+#### Subring proposition
+
+Let $R$ be a ring and let $S$ be a subset of $R$. Then $S$ is a ***subring*** of $R$ if and only if 
+
+* $S$ is a subgroup of $(R,+)$.
+* $a_{1},a_{2}\in S\implies a_{1}a_{2}\in S$ and 
+* $1_{R}\in S$.
+
+#### Intersection
+
+* The intersection of any set of subrings of $R$ is itself a subring.
+
+### Isomorphisms and direct products
+
+#### Isomorphism definition
+
+A map $\phi:R\tos S$ between two rings $R$ and $S$ is an ***isomorphism*** if 
+
+* $\phi$ is a ***bijection***.
+* $\phi(r_{1} + r_{2}) = \phi(r_{1})+\phi(r_{2})$ for all $r_{1},r_{2}\in R$ and 
+* $\phi(r_{1}r_{2}) = \phi(r_{1})\phi(r_{2})$ for all $r_{1},r_{2}\in R$.
+
+Two rings $R$ and $S$ are called ***isomorphic*** if there is an isomorphism between them.
+
+#### Isomorphism Lemmas
+
+Let $R$ and $S$ be rings, and $\phi:R\to S$ an ***isomorphism***. Then the following conditions hold:
+
+* $\phi(0_{R}) = 0_{S}$.
+* $\phi(1_{R}) = 1_{S}$.
+
+#### Direct product definition
+
+Let $R$ and $S$ be two rings. We define the ***direct product*** $R\times S$ of $R$ and $S$ to be the set $$\set{(r,s)\vert r\in R, s\in S}$$ of ordered pairs of elements from $R$ and $S$, with the obvious component-wise addition and multiplication $$(r_{1},s_{1}) + (r_{2},s_{2}) = (r_{1} + r_{2}, s_{1}+s_{2}),$$ and $$(r_{1},s_{1})(r_{2},s_{2}) = (r_{1}r_{2},s_{1}s_{2})$$ for $r_{1},r_{2}\in R$ and $s_{1},s_{2}\in S$.
+
+#### Sun Tzu's Theorem
+
+* The rings $\mathbb{Z}_ {m}\times\mathbb{Z}_ {n}$ and $\mathbb{Z}_ {mn}$ are ***isomorphic*** if and only if $m$ and $n$ are ***coprime***.
+
+#### Direct product lemmas
+
+* If $n = p_{1}^{a_{1}}...p_{k}^{a_{k}}$ is a ***decomposition*** of $n$ into a product of distinct primes then $$\mathbb{Z}_ {n}\cong \mathbb{Z}_ {p_{1}^{a_{1}}}\times...\times\mathbb{Z}_ {p_{k}^{a_{k}}}$$ as rings.
+
+### Integral domains and fields
+
+#### Definition of zero divisors and integral domain
+
+* If $a$ and $b$ are non-zero elements of a ring $R$ with $ab = 0$, then $a$ and $b$ are called ***zero divisors***.
+* A ring $R$ is called an ***integral domain*** (or just domain) if $R$ is ***commutative, nonzero*** and ***has no zero divisors***, that is if $a,b\in R, ab = 0$ implies $a = 0$ or $b = 0$.
+* The rings $\mathbb{Z},\mathbb{Q},\mathbb{R}$ and $\mathbb{C}$ are all ***integral domains***.
+* $\mathbb{Z}_ {n}$ is a ***domain*** if and only if $n$ is ***prime***.
+
+#### Definition of unit
+
+* An element $a$ of a ring $R$ is called a ***unit*** if it has a ***two-sided inverse*** under multiplication; that is, if there exists $b\in R$ with $ab = ba = 1$.
+
+#### Definition of division ring and field
+
+* A non-zero ring $R$ is called a ***division ring*** if $R\setminus\set{0}$ is a group under multiplication; that is, if all of its non-zero elements are units.
+* A ***field*** is a ***commutative division ring***.
+* Every ***field*** is an ***integral domain***.
+* A ***finite integral domain*** is a ***field***.
+
+#### Definition of characteristic 
+
+* Let $R$ be a ring. If there exists a positive integer $n$ such that $nx = 0$ for all $x\in R$, then we call the smallest such positive integer is the ***characteristic*** of $R$. If there is no such positive integer, then we say the charateristic of $R$ is 0.
+* $\mathbb{Z}_ {n}$ has characteristic $n$.
+* $\mathbb{Z}$ and $\mathbb{Q}$ have characteristic 0.
+* The polynomial ring $R[x]$ has the ***same characteristic*** as $R$.
