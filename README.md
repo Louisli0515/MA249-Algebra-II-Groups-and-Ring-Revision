@@ -376,3 +376,68 @@ Let $R$ and $S$ be two rings. We define the ***direct product*** $R\times S$ of 
 * $\mathbb{Z}_ {n}$ has characteristic $n$.
 * $\mathbb{Z}$ and $\mathbb{Q}$ have characteristic 0.
 * The polynomial ring $R[x]$ has the ***same characteristic*** as $R$.
+
+### Polynomials
+
+#### Polynomials Lemma
+
+* If $R$ is an integral domain, then so is $R[x]$.
+* If $R$ is ***an integral domain***, then the units in $R$ and in $R[x]$ are the ***same***.
+
+#### Polynomial division with remainder
+
+* For any $f,g\in F[x]$ with $0\ne g$, there exists $q,r\in F[x]$ with $f = qg + r$, where either $r = 0$ or $\deg(r) < \deg(g).$
+
+#### Remainder Theorem
+
+* Let $f = f(x)\in F[x]$. Then for $a\in F$, $f(a) = 0$ if and only if $(x-a)$ divides $f$.
+
+### Ideals and Quotient Rings
+
+#### Homomorphisms
+
+Let $R$ and $S$ be rings. A ***ring homomorphism*** $\phi$ from $R$ to $S$ is a function $\phi:R\to S$ that satisfies the following conditions:
+
+* $\phi(r_{1}+r_{2}) = \phi(r_{1})+\phi(r_{2})$ for all $r_{1},r_{2}\in R$,
+* $\phi(r_{1}r_{2}) = \phi(r_{1})\phi(r_{2})$ for all $r_{1},r_{2}\in R$ and 
+* $\phi(1_{R}) = 1_{S}$.
+
+#### Kernel and image
+
+* The ***image*** $\text{im}(\phi)$ of a ring homomorphism is just its image as a function: $$\text{im}(\phi) = \set{\phi(r)| r\in R}.$$
+* The ***kernel*** $\ker(\phi)$ of a ring homomorphism is defined to be its kernel as a homomorphism of additive groups. That is, $$\ker(\phi) = \set{r\in R|\phi(r) = 0_{S}}.$$
+* $\phi$ is ***injective*** if and only if $\ker(\phi) = \set{0}.$
+
+#### Ideals
+
+A subset $I$ of a ring $R$ is called an ***ideal*** in $R$ if 
+
+* $I$ is a ***subgroup*** of $(R,+)$;
+* For all $x\in R$ and $y\in I$, we have $xy\in I$ and $yx\in I$.
+
+#### Ideal lemmas
+
+* An ideal $I$ of $R$ contains $1_{R}$ only when $I = R$.
+* Let $\phi:R\to S$ be a ring homomorphism. Then $\ker(\phi)$ is an ***ideal*** in $R$.
+* If $I$ and $J$ are ideals of $R$, then so is $I+J = \set{i+j|i\in I,j\in J}.$
+
+### Quotient Rings
+
+* The ***cosets*** of an ideal form a ***ring*** under addition in the quotient group and the multiplication $(I+a)(I+b) = I+ab$.
+
+#### First Isomorphism Theorem for Rings
+
+* Let $\phi:R\to S$ be a ring homomorphism with kernel $I$. Then $R/I\cong\text{im}(\phi)$. More precisely, there is an ***isomorphism*** $\overline{\phi}: R/I\to\text{im}(\phi)$ defined by $\overline{\phi}(I+a) = \phi(a)$ for all $a\in R$.
+
+### Domains
+
+* A domain $R$ is called a ***principal ideal domain*** if every ideal of $R$ is principal.
+* For every field $F$, the polynomial ring $F[x]$ is a ***principal ideal domain***.
+
+#### Divisibility in integral domains
+
+The following statements are equivalent for $x,y\in R$.
+
+* $x\vert y$;
+* $y\in (x)$;
+* $(x)\supseteq (y)$.
