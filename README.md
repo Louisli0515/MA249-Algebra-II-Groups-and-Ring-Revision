@@ -323,7 +323,7 @@ Let $R$ be a ring and let $S$ be a subset of $R$. Then $S$ is a ***subring*** of
 
 #### Isomorphism definition
 
-A map $\phi:R\tos S$ between two rings $R$ and $S$ is an ***isomorphism*** if 
+A map $\phi:R\to S$ between two rings $R$ and $S$ is an ***isomorphism*** if 
 
 * $\phi$ is a ***bijection***.
 * $\phi(r_{1} + r_{2}) = \phi(r_{1})+\phi(r_{2})$ for all $r_{1},r_{2}\in R$ and 
