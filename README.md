@@ -1,5 +1,116 @@
 # MA249-Algebra-II-Groups-and-Ring-Revision
-My own notes about the MA249 Algebra II: Groups and Rings revision, mainly from the notes and example sheets
+My own notes about the MA249 Algebra II: Groups and Rings revision, mainly from the notes and example sheets.
+
+- [MA249-Algebra-II-Groups-and-Ring-Revision](#ma249-algebra-ii-groups-and-ring-revision)
+  * [Lecture notes](#lecture-notes)
+  * [Example sheets](#example-sheets)
+    + [Order of Groups, Orders of Elements](#order-of-groups--orders-of-elements)
+      - [Lemma about order of elements](#lemma-about-order-of-elements)
+    + [Cyclic Groups](#cyclic-groups)
+    + [$\mathbb{Z}_ {n}$ group](#--mathbb-z----n---group)
+    + [Isomorphisms and Isomorphic groups](#isomorphisms-and-isomorphic-groups)
+      - [Isomorphism lemmas](#isomorphism-lemmas)
+    + [Permutation Groups](#permutation-groups)
+      - [Permutation lemmas](#permutation-lemmas)
+    + [Dihedral Groups](#dihedral-groups)
+    + [Subgroups](#subgroups)
+      - [Subgroup lemmas](#subgroup-lemmas)
+    + [Cosets and Lagrange's Theorem](#cosets-and-lagrange-s-theorem)
+      - [Cosets lemma](#cosets-lemma)
+      - [Lagrange's Theorem](#lagrange-s-theorem)
+      - [Index](#index)
+    + [Normal Subgroups](#normal-subgroups)
+      - [Normal subgroups lemma](#normal-subgroups-lemma)
+    + [Direct Products and Groups of Order 4](#direct-products-and-groups-of-order-4)
+      - [Direct product](#direct-product)
+      - [Groups of order 4](#groups-of-order-4)
+      - [Groups of order $p$](#groups-of-order--p-)
+      - [Groups of order 6](#groups-of-order-6)
+    + [Generators](#generators)
+    + [Defining relations](#defining-relations)
+      - [Groups of order $mn$](#groups-of-order--mn-)
+      - [Groups of order 8](#groups-of-order-8)
+    + [Homomorphisms and Quotient Groups](#homomorphisms-and-quotient-groups)
+      - [Quotient Groups](#quotient-groups)
+      - [Homomorphisms](#homomorphisms)
+    + [Kernels and Images](#kernels-and-images)
+      - [Homomorphisms lemma](#homomorphisms-lemma)
+    + [The Isomorphism Theorems](#the-isomorphism-theorems)
+      - [First Isomorphism Theorem](#first-isomorphism-theorem)
+      - [Second Isomorphism Theorem](#second-isomorphism-theorem)
+      - [Third Isomorphism Theorem](#third-isomorphism-theorem)
+    + [Group Actions](#group-actions)
+      - [Kernel of an action](#kernel-of-an-action)
+      - [Cayley's Theorem](#cayley-s-theorem)
+    + [Orbits and Stabilisers](#orbits-and-stabilisers)
+      - [Orbits](#orbits)
+      - [Stabiliser](#stabiliser)
+      - [The Orbit-Stabiliser Theorem](#the-orbit-stabiliser-theorem)
+    + [Conjugation Action and Conjugacy Classes](#conjugation-action-and-conjugacy-classes)
+      - [Centraliser](#centraliser)
+      - [Centre](#centre)
+    + [Conjugacy Classes in Alternating Groups](#conjugacy-classes-in-alternating-groups)
+    + [Simple Groups](#simple-groups)
+    + [Sylow's subgroup](#sylow-s-subgroup)
+      - [Sylow's Theorem](#sylow-s-theorem)
+      - [Sylow's Theorem 2](#sylow-s-theorem-2)
+      - [Applications of Sylow's Theorem](#applications-of-sylow-s-theorem)
+    + [Rings and Subrings](#rings-and-subrings)
+      - [Definition of a ring](#definition-of-a-ring)
+      - [Commutative ring](#commutative-ring)
+      - [Definition of subrings](#definition-of-subrings)
+      - [Subring proposition](#subring-proposition)
+      - [Intersection](#intersection)
+    + [Isomorphisms and direct products](#isomorphisms-and-direct-products)
+      - [Isomorphism definition](#isomorphism-definition)
+      - [Isomorphism Lemmas](#isomorphism-lemmas)
+      - [Direct product definition](#direct-product-definition)
+      - [Sun Tzu's Theorem](#sun-tzu-s-theorem)
+      - [Direct product lemmas](#direct-product-lemmas)
+    + [Integral domains and fields](#integral-domains-and-fields)
+      - [Definition of zero divisors and integral domain](#definition-of-zero-divisors-and-integral-domain)
+      - [Definition of unit](#definition-of-unit)
+      - [Definition of division ring and field](#definition-of-division-ring-and-field)
+      - [Definition of characteristic](#definition-of-characteristic)
+    + [Polynomials](#polynomials)
+      - [Polynomials Lemma](#polynomials-lemma)
+      - [Polynomial division with remainder](#polynomial-division-with-remainder)
+      - [Remainder Theorem](#remainder-theorem)
+    + [Ideals and Quotient Rings](#ideals-and-quotient-rings)
+      - [Homomorphisms](#homomorphisms-1)
+      - [Kernel and image](#kernel-and-image)
+      - [Ideals](#ideals)
+      - [Ideal lemmas](#ideal-lemmas)
+      - [Principal ideal](#principal-ideal)
+    + [Quotient Rings](#quotient-rings)
+      - [First Isomorphism Theorem for Rings](#first-isomorphism-theorem-for-rings)
+    + [Domains](#domains)
+      - [Divisibility in integral domains](#divisibility-in-integral-domains)
+    + [Prime and Irreducible Elements](#prime-and-irreducible-elements)
+      - [Irreducible definition](#irreducible-definition)
+      - [Prime definition](#prime-definition)
+      - [Irreducible and prime lemma](#irreducible-and-prime-lemma)
+    + [Unique Factorisation Domains](#unique-factorisation-domains)
+      - [Unique Factorisation Domain definition](#unique-factorisation-domain-definition)
+      - [FD and UFD lemma](#fd-and-ufd-lemma)
+    + [Fields](#fields)
+      - [Maximal Ideals](#maximal-ideals)
+      - [Maximal lemmas](#maximal-lemmas)
+      - [Number Fields](#number-fields)
+      - [Algebaric proposition](#algebaric-proposition)
+    + [Polynomials](#polynomials-1)
+      - [Definition of algebraically closed fields](#definition-of-algebraically-closed-fields)
+    + [Eisenstein's Criterion](#eisenstein-s-criterion)
+      - [Definition of primitive](#definition-of-primitive)
+      - [Eisenstein's Criterion](#eisenstein-s-criterion-1)
+    + [Fields of fractions](#fields-of-fractions)
+      - [Fields of fractions proposition](#fields-of-fractions-proposition)
+      - [Definition of field of fractions](#definition-of-field-of-fractions)
+    + [Gauss's Lemma](#gauss-s-lemma)
+      - [Gauss's Theorem](#gauss-s-theorem)
+      - [More lemmas on Gauss's theorem](#more-lemmas-on-gauss-s-theorem)
+
+
 
 ## Lecture notes
 
@@ -8,6 +119,8 @@ My own notes about the MA249 Algebra II: Groups and Rings revision, mainly from 
 First thing first, feel free to download the 2022-2023 lecture notes for MA249 Algebra II Groups and Rings.
 
 ## Example sheets
+
+[MA249_Algebra_II_tutorial_sheet.pdf](https://github.com/Louisli0515/MA249-Algebra-II-Groups-and-Ring-Revision/files/11502540/MA249_Algebra_II_tutorial_sheet.pdf)
 
 ### Order of Groups, Orders of Elements
 
@@ -447,3 +560,104 @@ The following statements are equivalent for $x,y\in R$.
 * $x\vert y$;
 * $y\in (x)$;
 * $(x)\supseteq (y)$.
+
+### Prime and Irreducible Elements
+
+#### Irreducible definition
+
+Let $r\in R\setminus\set{0}$. We say that $r$ is ***irreducible*** if 
+
+* $r$ is ***not a unit***,
+* if $r = ab$ with $a,b\in R$, then either $a$ or $b$ ***is a unit***.
+
+#### Prime definition
+
+We say that $r\in R\setminus\set{0}$ is ***prime*** if 
+
+* $r$ is ***not a unit***,
+* if $r\vert xy$, then $r\vert x$ or $r\vert y$.
+
+#### Irreducible and prime lemma
+
+* If $R$ is a ***domain***, then every ***prime element*** of $R$ is ***irreducible***.
+* If $R$ is a principal ideal domain, then every ***irreducible element*** of $R$ is ***prime***.
+
+### Unique Factorisation Domains
+
+* An integral domain $R$ is a ***factorisation domain (FD)*** if each non-unit $x\in R\setminus\set{0}$ admits a factorisation $x = r_{1}r_{2}...r_{n}$ where the $r_{i}$ are irreducible elements.
+
+#### Unique Factorisation Domain definition
+
+An factorisation domain $R$ is a ***unique factorisation domain (UFD)*** if,
+
+* it is a factorisation domain; and 
+* for each non-unit $x$ in $R\setminus\set{0}$ and any two factorisations $x = r_{1}r_{2}...r_{n} = s_{1}s_{2}...s_{m}$ where all $r_{i}$ and $s_{i}$ are irreducible, we have $m = n$, and there exists $\sigma\in S_{n}$ such that $r_{i}\sim s_{\sigma(i)}$ for all $i$.
+
+#### FD and UFD lemma
+
+* If $R$ is a UFD, then every ***irreducible element*** of $R$ is ***prime***.
+* A ***principal ideal domain*** is a ***factorisation domain***.
+* If $R$ is a ***fatorisation domain*** in which all ***irreducibles are primes***, then $R$ is a ***unique factorisation domain***. In particular, every ***principal ideal domain*** is a ***unique factorisation domain***.
+
+### Fields
+
+#### Maximal Ideals
+
+* An ideal $I$ of a ring $R$ is called ***maximal***, if $I\ne R$, but if $J$ is any ideal of $R$ with $I\subseteq J\subseteq R$, then $I = J$ or $J = R$.
+
+#### Maximal lemmas
+
+* An ideal $I$ in a ***commutative ring*** $R$ is ***maximal*** if and only if $R/I$ is a ***field***.
+* For any $a\ne 0$, the ideal $(a)$ in a ***principal ideal domain*** $R$ is ***maximal*** if and only if $a$ is ***irreducible***.
+
+#### Number Fields
+
+* An element $\alpha\in\mathbb{C}$ is said to be ***algebraic*** (over $\mathbb{Q}$) if it satisfies a polynomial equation $f(\alpha) = 0$ for some $f\in\mathbb{Q}[x]$ with $\deg(f) > 0$. Otherwise $\alpha$ is called ***transcendental***.
+
+#### Algebaric proposition
+
+* If $\alpha$ is an algebraic element of $\mathbb{C}$, then there is a unique non-zero polynomial $m\in\mathbb{Q}[x]$ with leading coefficient 1 such that $m(\alpha) = 0$ and $m$ is ***irreducible***.
+* By the First Isomorphism Theorem for Rings, we have $$\text{im}(\phi_{\alpha})\cong\mathbb{Q}[x]/(f).$$ Since $f$ is irreducible, $(f)$ is a maximal ideal and hence $\mathbb{Q}[x]/(f)$ is a field. So $\text{im}(\phi_{\alpha})$ is a subfield of $\mathbb{C}$, denoted by $\mathbb{Q}[x]$. Fields of this type are called ***number fields***.
+
+### Polynomials
+
+#### Definition of algebraically closed fields
+
+* A field $F$ is ***algebraically closed*** if for every $f(x)\in F[x]$ of degree at least 1, there exists $a\in F$ such that $f(a) = 0$.
+
+### Eisenstein's Criterion
+
+#### Definition of primitive
+
+* An element $0\ne f = a_{0} + a_{1}x + ... + a_{n}x^{n}\in R[x]$ is called ***primitive*** if $\gcd(a_{0},a_{1},...,a_{n}) = 1$.
+
+#### Eisenstein's Criterion
+
+* Let $R$ be a ***unique factorisation domain***. Let $f = a_{0} + a_{1}x + ... + a_{n}x^{n}$ be a ***primitive polynomial*** in $R[x]$, and suppose there is prime $p\in R$ such that $p\not\vert a_{n}$ and $p\vert a_{i}$ for $0\leq i < n$ and $p^{2}\not\vert a_{0}$, Then $f$ is ***irreducible*** in $R[x]$.
+
+### Fields of fractions
+
+* We define an equivalence relation on $W$ by $(a,b)\sim (c,d)$ whenever $ad = bc$, where $$W = R\times(R\setminus\set{0}) = \set{(x,y)\in R\times R | y\ne 0}.$$
+* An equivalence class of $(a,b)$ is called a ***fraction*** and denoted $a/b$.
+
+#### Fields of fractions proposition
+
+* If $R$ is a domain then $Q(R)$ is a field under the operations $$\frac{a}{b}+\frac{c}{d} = \frac{ad+bc}{bd},\quad \frac{a}{b}\cdot\frac{c}{d} = \frac{ac}{bd},$$ and $\pi:R\to Q(R)$, with $\pi(r) = r/1$ is an ***injective ring homomorphism***.
+
+#### Definition of field of fractions
+
+* $Q = Q(R)$ is called the ***field of fractions*** of domain $R$.
+
+### Gauss's Lemma
+
+* The product of two ***primitive polynomials*** is ***primitive***.
+* Let $R$ be a unique factorisation domain with field of fractions $Q = Q(R)$. Then a ***primitive polynomial*** in $R[x]$ is ***irreducible*** if and only if it is irreducible in $Q[x]$.
+
+#### Gauss's Theorem
+
+* A ***primitive irreducible polynomial*** in $\mathbb{Z}[x]$ remains irreducible in $\mathbb{Q}[x]$.
+
+#### More lemmas on Gauss's theorem
+
+* If $R$ is a unique fatorisation domain, then there are two kinds of irreducibles in $R[X]$: ***irreducible elements*** in $R$ and ***primitive elements*** in $R[X]$ that are irreducible in $Q[X]$.
+* If $R$ is a unique fatorisation domain, then so is $R[x]$.
