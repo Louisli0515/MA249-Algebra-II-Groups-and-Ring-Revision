@@ -351,7 +351,7 @@ This is also defined as a ***left action***, while a ***right action*** can be d
 
 ### Conjugation Action and Conjugacy Classes
 
-* Another important action of $G$ on $X = G$, which is defined by $$g\cdot x = gxg^{-1}$$for $g,x\in G$. This action is called ***conjugation***.
+* Another important action of $G$ on $X = G$, which is defined by $$g\cdot x = gxg^{-1}$$ for $g,x\in G$. This action is called ***conjugation***.
 * The orbits of the action are called the ***conjugacy classes*** of $G$, and elements in the same conjugacy class are said to be ***conjugate*** in $G$.
 * So $g,h\in G$ are conjugate if and only if there exists $f\in G$ with $h = fgf^{-1}$. We will write $\text{Cl}_ {G}(g)$ for the orbit of $g$, that is the conjugacy class containing $g$. Thus, $$\text{Cl}_ {G}(g) = \set{xgx^{-1}\vert x\in G}.$$
 
